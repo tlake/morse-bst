@@ -40,8 +40,6 @@ func main() {
 			var result string
 			chars := removeEmpty(strings.Split(word, "/"))
 
-			fmt.Printf("chars: %v\n", chars)
-
 			for _, morse := range chars {
 				result += tree.Decode(morse)
 			}
